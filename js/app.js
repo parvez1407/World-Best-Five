@@ -56,7 +56,7 @@ function setElementValueById(elementId, finalValue) {
     calculationValue.innerText = finalValue;
 }
 
-document.getElementById('btn-calculate').addEventListener('click', function () {
+function calculatePlayerCostTotal() {
     const perPlayerCostInputValue = getInputValueById('cost-per-player');
     if (isNaN(perPlayerCostInputValue)) {
         alert('Please provide valid Input');
@@ -64,9 +64,11 @@ document.getElementById('btn-calculate').addEventListener('click', function () {
     }
 
     const totalPlayersExpenses = perPlayerCostInputValue * 5;
-
     setElementValueById('players-expenses', totalPlayersExpenses);
+}
 
+document.getElementById('btn-calculate').addEventListener('click', function () {
+    calculatePlayerCostTotal();
 })
 
 
