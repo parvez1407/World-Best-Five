@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+
+.font-style{
+    font-family: Berkshire Swash;
+}
 .best-cover{
     position: relative;
 }
