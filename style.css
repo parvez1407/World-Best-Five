@@ -1,0 +1,27 @@
+.best-cover{
+    position: relative;
+}
+.start{
+    position: absolute;
+    top: 0;
+    left: 0; 
+}
+.end{
+    position: absolute;
+    bottom: 0;
+    right: 0;   
+}
+.cover-height{
+    height: 481px;
+}
+
+.title-box{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.col-height{
+    height: 992px;
+}

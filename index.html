@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Best Five</title>
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- main css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-zinc-900">
+    <header>
+        <div class="bg-black best-cover cover-height">
+            <img class="start" src="image/cover-img.png" alt="">
+            <div class="title-box">
+                <h1 class="text-8xl text-orange-500 text-center font-bold">World Best Five</h1>
+                <p class="text-white text-lg mt-8 text-center">Amet minim mollit non deserunt ullamco est sit aliqua
+                    dolor
+                    do amet sint.
+                    Velit <br>
+                    officia consequat
+                    duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+            </div>
+
+            <img class="end" src="image/football.png" alt="">
+
+        </div>
+    </header>
+
+    <main>
+        <section class="container mx-auto w-10/12 mt-16">
+            <div class="grid grid-cols-12 gap-4">
+                <div class="grid col-span-9">
+                    <div id="btn-disable" class="grid grid-cols-3 gap-4">
+                        <!-- player 1 -->
+                        <div class="bg-black border-gray-700 border-2">
+                            <div><img src="image/messi.png" alt=""></div>
+                            <h2 class="text-white text-center text-3xl font-bold mt-4">Lionel Messi</h2>
+                            <h4 class="text-slate-300 text-center my-4">36 Goals . 120 Assist</h4>
+                            <div class="text-center">
+                                <button onclick="addToPlayerList(this)"
+                                    class="bg-blue-500 hover:bg-blue-400 text-lg px-16 py-2 text-white font-semibold mb-5">Select</button>
+                            </div>
+                        </div>
+                        <!-- player 2 -->
+                        <div class="bg-black border-gray-700 border-2">
+                            <div><img src="image/cristiano-ronaldo.jpg" alt=""></div>
+                            <h2 class="text-white text-center text-3xl font-bold mt-4">Cristiano Ronaldo</h2>
+                            <h4 class="text-slate-300 text-center my-4">36 Goals . 120 Assist</h4>
+                            <div class="text-center">
+                                <button onclick="addToPlayerList(this)"
+                                    class="bg-blue-500 hover:bg-blue-400 text-lg px-16 py-2 text-white font-semibold mb-5">Select</button>
+                            </div>
+                        </div>
+                        <!-- player 3 -->
+                        <div class="bg-black border-gray-700 border-2">
+                            <div><img src="image/neymar.jpg" alt=""></div>
+                            <h2 class="text-white text-center text-3xl font-bold mt-4">Neymar Jr</h2>
+                            <h4 class="text-slate-300 text-center my-4">36 Goals . 120 Assist</h4>
+                            <div class="text-center">
+                                <button onclick="addToPlayerList(this)"
+                                    class="bg-blue-500 hover:bg-blue-400 text-lg px-16 py-2 text-white font-semibold mb-5">Select</button>
+                            </div>
+                        </div>
+                        <!-- player 4 -->
+                        <div class="bg-black border-gray-700 border-2">
+                            <div><img src="image/kylian-mbappé.jpg" alt=""></div>
+                            <h2 class="text-white text-center text-3xl font-bold mt-4">Kylian Mbappé</h2>
+                            <h4 class="text-slate-300 text-center my-4">36 Goals . 120 Assist</h4>
+                            <div class="text-center">
+                                <button onclick="addToPlayerList(this)"
+                                    class="bg-blue-500 hover:bg-blue-400 text-lg px-16 py-2 text-white font-semibold mb-5">Select</button>
+                            </div>
+                        </div>
+                        <!-- player 5 -->
+                        <div class="bg-black border-gray-700 border-2">
+                            <div><img src="image/marcelo-vieira.jpg" alt=""></div>
+                            <h2 class="text-white text-center text-3xl font-bold mt-4">Marcelo Vieira</h2>
+                            <h4 class="text-slate-300 text-center my-4">36 Goals . 120 Assist</h4>
+                            <div class="text-center">
+                                <button onclick="addToPlayerList(this)"
+                                    class="bg-blue-500 hover:bg-blue-400 text-lg px-16 py-2 text-white font-semibold mb-5">Select</button>
+                            </div>
+                        </div>
+                        <!-- player 6 -->
+                        <div class="bg-black border-gray-700 border-2">
+                            <div><img src="image/thiago-silva.jpg" alt=""></div>
+                            <h2 class="text-white text-center text-3xl font-bold mt-4">Thiago Silva</h2>
+                            <h4 class="text-slate-300 text-center my-4">36 Goals . 120 Assist</h4>
+                            <div class="text-center">
+                                <button onclick="addToPlayerList(this)"
+                                    class="bg-blue-500 hover:bg-blue-400 text-lg px-16 py-2 text-white font-semibold mb-5">Select</button>
+                            </div>
+                        </div>
+                        <!-- player 7 -->
+                        <div class="bg-black border-gray-700 border-2">
+                            <div><img src="image/renato-sanches.png" alt=""></div>
+                            <h2 class="text-white text-center text-3xl font-bold mt-4">Renato Sanches</h2>
+                            <h4 class="text-slate-300 text-center my-4">36 Goals . 120 Assist</h4>
+                            <div class="text-center">
+                                <button onclick="addToPlayerList(this)"
+                                    class="bg-blue-500 hover:bg-blue-400 text-lg px-16 py-2 text-white font-semibold mb-5">Select</button>
+                            </div>
+                        </div>
+                        <!-- player 8 -->
+                        <div class="bg-black border-gray-700 border-2">
+                            <div><img src="image/sergio-ramos.png" alt=""></div>
+                            <h2 class="text-white text-center text-3xl font-bold mt-4">Sergio Ramos</h2>
+                            <h4 class="text-slate-300 text-center my-4">36 Goals . 120 Assist</h4>
+                            <div class="text-center">
+                                <button onclick="addToPlayerList(this)"
+                                    class="bg-blue-500 hover:bg-blue-400 text-lg px-16 py-2 text-white font-semibold mb-5">Select</button>
+                            </div>
+                        </div>
+                        <!-- player 9 -->
+                        <div class="bg-black border-gray-700 border-2">
+                            <div><img src="image/vítor-machado.png" alt=""></div>
+                            <h2 class="text-white text-center text-3xl font-bold mt-4">Vítor Machado</h2>
+                            <h4 class="text-slate-300 text-center my-4">36 Goals . 120 Assist</h4>
+                            <div class="text-center">
+                                <button onclick="addToPlayerList(this)"
+                                    class="bg-blue-500 hover:bg-blue-400 text-lg px-16 py-2 text-white font-semibold mb-5">Select</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="grid col-span-3 col-height">
+                    <div class="grid grid-rows-2 gap-4">
+                        <!-- list of selected player  -->
+                        <div class="bg-black">
+                            <h2 class="text-2xl text-center mt-4 text-white font-medium">Selected - V</h2>
+                            <div id="player-list" class="text-white ml-8 mt-10 font-bold">
+
+                            </div>
+                        </div>
+                        <!-- input field and calculation part  -->
+                        <div class="bg-black">
+                            <h2 class="text-2xl text-center mt-4 text-white font-medium">Budget</h2>
+                            <div>
+                                <div class="text-center mt-10"><label for="" class="text-white">Per Player</label>
+                                    <input type="number"
+                                        class="px-3 py-1 bg-transparent border-white border text-white">
+                                </div>
+                                <div class="text-center mt-5">
+                                    <button
+                                        class="bg-blue-500 hover:bg-blue-400 text-lg px-16 py-2 text-white font-semibold mb-5">Calculate</button>
+                                </div>
+                                <h2 class="text-center mt-4 text-slate-400 font-light">Player Expenses
+                                    $<span class="font-bold">00</span></h2>
+                                <div class="text-center mt-5"><label for="" class="text-white">Manager</label>
+                                    <input type="number"
+                                        class="px-3 py-1 bg-transparent border-white border text-white">
+                                </div>
+                                <div class="text-center mt-5"><label for="" class="text-white">Coach</label>
+                                    <input type="number"
+                                        class="px-3 py-1 bg-transparent border-white border text-white">
+                                </div>
+                                <div class="text-center mt-5">
+                                    <button
+                                        class="bg-blue-500 hover:bg-blue-400 text-lg px-16 py-2 text-white font-semibold mb-5">Calculate
+                                        Total</button>
+                                </div>
+                                <h2 class="text-center text-slate-400 font-light">Total
+                                    <span class="font-bold text-orange-600">$</span><span
+                                        class="font-bold text-orange-600">00</span>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="mt-24">
+
+            <hr>
+            <h2 class="text-white text-center my-10">Copyright @ 2022 All Rights Reserved.</h2>
+        </footer>
+    </main>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
