@@ -85,14 +85,18 @@ function calculateFinalCostTotal() {
     const managerExpense = getInputValueById('manager-expenses');
     // player Expenses
     const coachExpense = getInputValueById('coach-expenses');
-    if (isNaN(managerExpense, coachExpense)) {
-        alert('Please provide valid input')
+
+    if (playerTotalExpense !== 0) {
+        if (isNaN(managerExpense, coachExpense)) {
+            alert('Please provide valid input')
+            return;
+        }
+        const finalTotal = playerTotalExpense + managerExpense + coachExpense;
+        setElementValueById('final-total', finalTotal)
+    } else {
+        alert('First calculate player total');
         return;
     }
-
-    const finalTotal = playerTotalExpense + managerExpense + coachExpense;
-
-    setElementValueById('final-total', finalTotal)
 
 }
 
