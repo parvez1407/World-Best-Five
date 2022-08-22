@@ -33,13 +33,36 @@ function addToPlayerList(element) {
         alert('Five Item Selected You can not select more');
         return;
     }
-
     element.disabled = true;
     element.style.backgroundColor = '#808080';
-
 }
 
+function getInputValueById(inputId) {
+    const inputField = document.getElementById(inputId);
+    const inputFieldValueString = inputField.value;
+    const inputFieldValue = parseInt(inputFieldValueString);
+    return inputFieldValue;
+}
 
+function getElementValueById(elementId) {
+    const elementField = getElementById(elementId);
+    const elementFieldValueString = elementField.innerText;
+    const elementValue = parseInt(elementFieldValueString);
+    return elementValue;
+}
+
+function setElementValueById(elementId) {
+    const
+}
+
+document.getElementById('btn-calculate').addEventListener('click', function () {
+    const perPlayerCostInputValue = getInputValueById('cost-per-player');
+    console.log(perPlayerCostInputValue);
+
+
+})
+
+players - expenses
 
 
 
