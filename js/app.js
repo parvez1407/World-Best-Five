@@ -51,18 +51,24 @@ function getElementValueById(elementId) {
     return elementValue;
 }
 
-function setElementValueById(elementId) {
-    const
+function setElementValueById(elementId, finalValue) {
+    const calculationValue = document.getElementById(elementId);
+    calculationValue.innerText = finalValue;
 }
 
 document.getElementById('btn-calculate').addEventListener('click', function () {
     const perPlayerCostInputValue = getInputValueById('cost-per-player');
-    console.log(perPlayerCostInputValue);
+    if (isNaN(perPlayerCostInputValue)) {
+        alert('Please provide valid Input');
+        return;
+    }
 
+    const totalPlayersExpenses = perPlayerCostInputValue * 5;
+
+    setElementValueById('players-expenses', totalPlayersExpenses);
 
 })
 
-players - expenses
 
 
 
