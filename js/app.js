@@ -62,13 +62,28 @@ function calculatePlayerCostTotal() {
         alert('Please provide valid Input');
         return;
     }
+    document.getElementById('player-list').innerText = playerArray.length;
+    const totalPlayer = playerArray.length;
+    displayPlayer(playerArray);
+    if (totalPlayer === 5) {
+        const totalPlayersExpenses = perPlayerCostInputValue * totalPlayer;
+        setElementValueById('players-expenses', totalPlayersExpenses);
+    }
+    else {
+        alert('You hove to select Five Player')
+    }
 
-    const totalPlayersExpenses = perPlayerCostInputValue * 5;
-    setElementValueById('players-expenses', totalPlayersExpenses);
+}
+
+function calculateFinalCostTotal() {
+    const
 }
 
 document.getElementById('btn-calculate').addEventListener('click', function () {
     calculatePlayerCostTotal();
+})
+document.getElementById('calculate-final-total').addEventListener('click', function () {
+    calculateFinalCostTotal();
 })
 
 
